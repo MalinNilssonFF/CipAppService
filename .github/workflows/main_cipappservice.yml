@@ -71,5 +71,5 @@ jobs:
         with:
           app-name: 'CipAppService'
           slot-name: 'Production'
-          package: ./publish
+          package: .
           
