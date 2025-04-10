@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: .net-app
+          name: dotnet-app
           path: ./publish
 
   deploy:
@@ -49,7 +49,14 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: .net-app
+          name: dotnet-app
+
+      - name: Print downloaded artifact contents
+        run: |
+          echo "Listing contents of downloaded artifact"
+          dir .  # Windows-specific, shows the current directory contents
+          dir ./dotnet-app  # Assuming the artifact folder is named dotnet-app, change if needed
+
       
       - name: Login to Azure
         uses: azure/login@v2
