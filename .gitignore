@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/CipAppService/.vs/CipAppService
+/CipAppService/CipWebApi/obj
+/CipAppService/CipWebApi/appsettings.Development.json
+/CipAppService/CipWebApi/CipWebApi.csproj.user
