@@ -7,3 +7,4 @@
 /CipAppService/CipWebApi/obj
 /CipAppService/CipWebApi/appsettings.Development.json
 /CipAppService/CipWebApi/CipWebApi.csproj.user
+/CipAppService/CipWebApi/bin/Debug/net8.0
