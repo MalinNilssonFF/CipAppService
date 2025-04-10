@@ -55,8 +55,7 @@ jobs:
         run: |
           echo "Listing contents of downloaded artifact"
           dir .  # Windows-specific, shows the current directory contents
-          dir ./dotnet-app  # Assuming the artifact folder is named dotnet-app, change if needed
-
+     
       
       - name: Login to Azure
         uses: azure/login@v2
