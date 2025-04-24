@@ -23,7 +23,11 @@ namespace CipWebApi.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             var encoded = Request.Headers["x-ms-client-principal"];
-            var decoded = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(encoded));
+            var decoded = "nop";
+            if (!string.IsNullOrEmpty(encoded))
+            {
+                 decoded = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(encoded));
+            }
            // var principal = JsonSerializer.Deserialize<ClientPrincipal>(decoded);
 
 
